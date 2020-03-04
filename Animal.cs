@@ -16,6 +16,7 @@ namespace Zoo
         public int Temperature { get; set; }
         public string NaturalHabitat { get; set; }
         public string Medication { get; set; }
+                public string Medication2 { get; set; }
         public string GetIll
         {
             get {
