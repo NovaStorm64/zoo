@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Zoo
+﻿namespace Zoo
 {
-    class Fish : Animal
+    internal class Fish : Animal
     {
         public bool Gills { get; }
         public bool Fins { get; }

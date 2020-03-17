@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Zoo
+﻿namespace Zoo
 {
-    class Mammals : Animal 
+    internal class Mammals : Animal
     {
         public string FurType { get; }
         public string Noise { get; }
