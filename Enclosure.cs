@@ -6,5 +6,6 @@ namespace Zoo
 {
     class Enclosure
     {
+        public string Biome { get; }
     }
 }
