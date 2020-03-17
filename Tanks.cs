@@ -4,12 +4,9 @@ using System.Text;
 
 namespace Zoo
 {
-    class Tanks
+    class Tanks : Environment
     {
-        class tanks : Environment
-        {
-            public int depth { get; }
+        public int depth { get; }
 
-        }
     }
 }
