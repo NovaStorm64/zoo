@@ -8,5 +8,11 @@ namespace Zoo
     {
         public int depth { get; }
 
+        public Tanks()
+        {
+            depth = 100;
+        }
+
+
     }
 }

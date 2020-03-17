@@ -8,80 +8,94 @@ namespace Zoo
     {
         static void Main()
         {
-            int inputAnimal;
-            bool loop = true;
-
-            while (loop == true)
-            {
-                Fish AnglerFish = new Fish("Cocaine", "male", false, "none", "cold water", true, true, 3, 2, "5m x 5m x 5m");
-                Fish Blobfish = new Fish("Jack", "female", false, "paracetamol", "cold water", true, true, 1, -5, "5m x 5m x 5m");
-                Fish Pufferfish = new Fish("Lol", "Male", true, "none", "warm water", true, true, 0.05, 25, "5m x 10m x 5m");
-
-                Birds Toucan = new Birds("Frog", "male", false, "none", "rainforest", "Black and white", "Large", false, "10ft x 15ft", "squawk");
-                Birds Cockatoo = new Birds("Kiril", "female", false, "none", "tropical", "Yellow and white", "Snall", false, "5ft x 10ft", "squawk and talk");
-                Birds Macaw = new Birds("xavier", "female", false, "none", "tropical", "Yellow, Red, Blue, and Green", "Medium", false, "10ft x 15ft", "squawk and talk");
-
-                Mammals redPanda = new Mammals("THE WONDERFUL THING ABOUT TIGERS", "Female", false, "None", "cold climates", "FLUFFY", "Squeak", "10pm-5am", 150);
-                Mammals PolarBear = new Mammals("mog", "Female", false, "None", "Arctic tundra", "Thick fur", "growl", "7pm-8am", 100);
-                Mammals Tiger = new Mammals("Polly", "Female", false, "None", "Asia", "Thin fur", "growl", "9pm-5am", 300);
-                Mammals Cheetah = new Mammals("Margaret", "Fe", false, "Pills", "Savannah", "Thin fur", "growl", "9pm-5am", 300);
-                Mammals Dolphin = new Mammals("Steven", "Female", false, "None", "Tropical Oceans", "Skin", "Whistles and clicks", "-", 400);
-                Mammals Lemur = new Mammals("Gary", "Male", false, "none", "Treetops", "Slightly Fluffy", "Squeal", "10pm-5am", 150);
-                Mammals Orca = new Mammals("Dave", "Neuter", true, "nope", "lol", "Skin", "Whale noises", "-", 400);
-
-                Animal[] animals = new Animal[] { redPanda, PolarBear, Tiger, Cheetah, Dolphin, Lemur, Orca, Toucan, Cockatoo, Macaw, AnglerFish, Blobfish, Pufferfish };
-
-                Console.WriteLine("~~~~~~ENTER AN ANIMAL!~~~~~~");
-                Console.WriteLine("MAMMALS");
-                Console.WriteLine("1 - Red Panda");
-                Console.WriteLine("2 - Polar Bear");
-                Console.WriteLine("3 - Tiger");
-                Console.WriteLine("4 - Cheetah");
-                Console.WriteLine("5 - Dolphin");
-                Console.WriteLine("6 - Lemur");
-                Console.WriteLine("7 - Orca");
-                Console.WriteLine("BIRDS");
-                Console.WriteLine("8 - Toucan");
-                Console.WriteLine("9 - Cockatoo");
-                Console.WriteLine("10 - Macaw");
-                Console.WriteLine("FISH");
-                Console.WriteLine("11 - Angler Fish");
-                Console.WriteLine("12 - Blobfish");
-                Console.WriteLine("13 - Pufferfish");
-
-                //for (int x = 0; x != animals.Length; x++)
-                //{
-                //    Console.WriteLine(x + 1 + " - " + animals.Name[x]);
-                //}
-
-                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~");
-                //Console.WriteLine("-1 -  Create an animal");
-                Console.WriteLine("0 - Exit the Program");
-                Console.Write(">>> ");
-                inputAnimal = Int32.Parse(Console.ReadLine());
-
-                Console.Clear();
 
 
-                if (inputAnimal == 0)
-                {
-                    loop = false;
-                }
-                //else if (inputAnimal == -1)
-                //{
-                //    animalMaker();
-                //}
-                else
-                {
-                    DisplayStuff(animals[inputAnimal - 1]);
-                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~");
-                    Console.WriteLine("Press enter to exit");
-                    Console.Write(">>> ");
-                    Console.ReadLine();
-                    Console.Clear();
-                }
 
-            }
+            Cage cagney = new Cage();
+
+
+
+
+
+
+
+
+
+
+            //int inputAnimal;
+            //bool loop = true;
+
+            //while (loop == true)
+            //{
+            //    Fish AnglerFish = new Fish("Cocaine", "male", false, "none", "cold water", true, true, 3, 2, "5m x 5m x 5m");
+            //    Fish Blobfish = new Fish("Jack", "female", false, "paracetamol", "cold water", true, true, 1, -5, "5m x 5m x 5m");
+            //    Fish Pufferfish = new Fish("Lol", "Male", true, "none", "warm water", true, true, 0.05, 25, "5m x 10m x 5m");
+
+            //    Birds Toucan = new Birds("Frog", "male", false, "none", "rainforest", "Black and white", "Large", false, "10ft x 15ft", "squawk");
+            //    Birds Cockatoo = new Birds("Kiril", "female", false, "none", "tropical", "Yellow and white", "Snall", false, "5ft x 10ft", "squawk and talk");
+            //    Birds Macaw = new Birds("xavier", "female", false, "none", "tropical", "Yellow, Red, Blue, and Green", "Medium", false, "10ft x 15ft", "squawk and talk");
+
+            //    Mammals redPanda = new Mammals("THE WONDERFUL THING ABOUT TIGERS", "Female", false, "None", "cold climates", "FLUFFY", "Squeak", "10pm-5am", 150);
+            //    Mammals PolarBear = new Mammals("mog", "Female", false, "None", "Arctic tundra", "Thick fur", "growl", "7pm-8am", 100);
+            //    Mammals Tiger = new Mammals("Polly", "Female", false, "None", "Asia", "Thin fur", "growl", "9pm-5am", 300);
+            //    Mammals Cheetah = new Mammals("Margaret", "Fe", false, "Pills", "Savannah", "Thin fur", "growl", "9pm-5am", 300);
+            //    Mammals Dolphin = new Mammals("Steven", "Female", false, "None", "Tropical Oceans", "Skin", "Whistles and clicks", "-", 400);
+            //    Mammals Lemur = new Mammals("Gary", "Male", false, "none", "Treetops", "Slightly Fluffy", "Squeal", "10pm-5am", 150);
+            //    Mammals Orca = new Mammals("Dave", "Neuter", true, "nope", "lol", "Skin", "Whale noises", "-", 400);
+
+            //    Animal[] animals = new Animal[] { redPanda, PolarBear, Tiger, Cheetah, Dolphin, Lemur, Orca, Toucan, Cockatoo, Macaw, AnglerFish, Blobfish, Pufferfish };
+
+            //    Console.WriteLine("~~~~~~ENTER AN ANIMAL!~~~~~~");
+            //    Console.WriteLine("MAMMALS");
+            //    Console.WriteLine("1 - Red Panda");
+            //    Console.WriteLine("2 - Polar Bear");
+            //    Console.WriteLine("3 - Tiger");
+            //    Console.WriteLine("4 - Cheetah");
+            //    Console.WriteLine("5 - Dolphin");
+            //    Console.WriteLine("6 - Lemur");
+            //    Console.WriteLine("7 - Orca");
+            //    Console.WriteLine("BIRDS");
+            //    Console.WriteLine("8 - Toucan");
+            //    Console.WriteLine("9 - Cockatoo");
+            //    Console.WriteLine("10 - Macaw");
+            //    Console.WriteLine("FISH");
+            //    Console.WriteLine("11 - Angler Fish");
+            //    Console.WriteLine("12 - Blobfish");
+            //    Console.WriteLine("13 - Pufferfish");
+
+            //    //for (int x = 0; x != animals.Length; x++)
+            //    //{
+            //    //    Console.WriteLine(x + 1 + " - " + animals.Name[x]);
+            //    //}
+
+            //    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~");
+            //    //Console.WriteLine("-1 -  Create an animal");
+            //    Console.WriteLine("0 - Exit the Program");
+            //    Console.Write(">>> ");
+            //    inputAnimal = Int32.Parse(Console.ReadLine());
+
+            //    Console.Clear();
+
+
+            //    if (inputAnimal == 0)
+            //    {
+            //        loop = false;
+            //    }
+            //    //else if (inputAnimal == -1)
+            //    //{
+            //    //    animalMaker();
+            //    //}
+            //    else
+            //    {
+            //        DisplayStuff(animals[inputAnimal - 1]);
+            //        Console.WriteLine("~~~~~~~~~~~~~~~~~~~");
+            //        Console.WriteLine("Press enter to exit");
+            //        Console.Write(">>> ");
+            //        Console.ReadLine();
+            //        Console.Clear();
+            //    }
+
+            //}
         }
 
         public static void DisplayStuff(Animal animal)

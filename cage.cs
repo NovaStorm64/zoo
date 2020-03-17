@@ -8,5 +8,12 @@ namespace Zoo
     {
         public string Biome { get; }
         public bool moreThanTwoBirds { get; }
+
+        public Cage()
+        {
+            Biome = "Tropical";
+            moreThanTwoBirds = true;
+        }
+
     }
 }
