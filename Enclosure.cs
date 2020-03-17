@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo
 {
-    class Enclosure
+    class Enclosure : Environment
     {
         public string Biome { get; }
     }
