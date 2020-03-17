@@ -4,8 +4,9 @@ using System.Text;
 
 namespace Zoo
 {
-    class Enclosure : Environment 
+    class Cage : Environment
     {
         public string Biome { get; }
+        public bool moreThanTwoBirds { get; }
     }
 }
