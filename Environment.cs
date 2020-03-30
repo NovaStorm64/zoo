@@ -14,5 +14,11 @@ namespace Zoo
         public int visitorNumber { get; set; }
         public int noOfAnimals { get; set; }
 
+
+        private Animal anim;
+        public Environment(Animal anim)
+        {
+            this.anim = anim;
+        }
     }
 }

@@ -19,9 +19,6 @@ namespace Zoo
 
 
 
-
-
-
             //int inputAnimal;
             //bool loop = true;
 
