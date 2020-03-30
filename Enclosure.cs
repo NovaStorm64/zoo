@@ -9,9 +9,9 @@ namespace Zoo
         public string Biome { get; }
 
 
-        public Enclosure()
+        public Enclosure(string newBiome)
         {
-            Biome = "Savannah";
+            Biome = newBiome;
         }
 
     }

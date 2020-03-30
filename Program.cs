@@ -11,7 +11,7 @@ namespace Zoo
 
 
 
-            Cage cagney = new Cage();
+            Cage cagney = new Cage("Rainforest", true);
 
 
 

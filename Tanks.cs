@@ -8,9 +8,9 @@ namespace Zoo
     {
         public int depth { get; }
 
-        public Tanks()
+        public Tanks(int newDepth)
         {
-            depth = 100;
+            depth = newDepth;
         }
 
 

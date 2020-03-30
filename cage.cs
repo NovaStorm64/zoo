@@ -9,10 +9,10 @@ namespace Zoo
         public string Biome { get; }
         public bool moreThanTwoBirds { get; }
 
-        public Cage()
+        public Cage(string newBiome, bool twoMoreBirds)
         {
-            Biome = "Tropical";
-            moreThanTwoBirds = true;
+            Biome = newBiome;
+            moreThanTwoBirds = twoMoreBirds;
         }
 
     }
